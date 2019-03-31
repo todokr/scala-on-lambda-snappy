@@ -5,9 +5,6 @@ ThisBuild / scalaVersion     := "2.12.8"
 ThisBuild / version          := "0.1.0"
 ThisBuild / organization     := "io.github.todokr"
 
-lazy val root = (project in file("."))
-  .aggregate(jvm)
-
 lazy val jvm = (project in file("jvm"))
   .settings(
     name := "jvm",
@@ -18,10 +15,7 @@ lazy val jvm = (project in file("jvm"))
 
 lazy val scalaJs = (project in file("scalajs"))
   .settings(
-    name := "scala-js",
-    libraryDependencies ++= Seq(
-      "net.exoego" %%% "aws-sdk-scalajs-facade" % "0.21.0"
-    ),
+    name := "scalaJs",
     scalacOptions += "-P:scalajs:sjsDefinedByDefault",
     scalaJSLinkerConfig ~= { _.withModuleKind(ModuleKind.CommonJSModule) },
     artifactPath in (Compile, fastOptJS) := baseDirectory.value / "dist" / "hello.js",
@@ -29,10 +23,22 @@ lazy val scalaJs = (project in file("scalajs"))
 
 lazy val scalaNative = (project in file("scalanative"))
   .settings(
-    name := "scala-native"
-  )
+    name := "scalaNative",
+    scalaVersion := "2.11.12",
+    resolvers += "mmreleases" at "https://artifactory.mediamath.com/artifactory/libs-release-global",
+    libraryDependencies ++= Seq(
+      "com.softwaremill.sttp" %%% "core" % "1.5.4",
+      "com.mediamath" %%% "scala-json" % "1.0"
+    ),
+    nativeCompileOptions += "-I/usr/local/opt/curl/include",
+    nativeLinkingOptions += "-L/usr/local/opt/curl/lib",
+  ).enablePlugins(ScalaNativePlugin)
 
-lazy val graalvm = (project in file("graalvm"))
+lazy val graalVm = (project in file("graalvm"))
   .settings(
-    name := "graal-vm"
+    name := "graalVm",
+    libraryDependencies ++= Seq(
+      "com.softwaremill.sttp" %% "core" % "1.5.11",
+      "io.spray" %%  "spray-json" % "1.3.5"
+    )
   )
