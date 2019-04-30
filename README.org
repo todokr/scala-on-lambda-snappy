@@ -1,0 +1,18 @@
+* TODOS
+
+** JVM
+*** Hello
+*** Fibonacci
+*** Cloudwatch to Slack
+** ScalaJS
+*** Hello
+*** Fibonacci
+*** Cloudwatch to Slack
+** Scala Native
+*** Hello
+*** Fibonacci
+*** Cloudwatch to Slack
+** GraalVM
+*** Hello
+*** Fibonacci
+*** Cloudwatch to Slack
