@@ -1,18 +1,42 @@
 * TODOS
 
 ** JVM
-*** TODO Hello
+*** DONE Hello
+**** java.util.Map
+jar: 9.7MB
+REPORT RequestId: 4c122299-e360-43ae-8828-86d36510fd20	Duration: 8588.53 ms	Billed Duration: 8600 ms 	Memory Size: 128 MB	Max Memory Used: 115 MB	
+REPORT RequestId: ac5dcf8b-94f4-49d3-a9d2-232c62c7730b	Duration: 0.57 ms	Billed Duration: 100 ms 	Memory Size: 128 MB	Max Memory Used: 115 MB
+
+**** BeanProperty
+jar:12.3MB
+REPORT RequestId: f233ae8c-265b-42d7-bc85-777227769ed6	Duration: 1020.23 ms	Billed Duration: 1100 ms 	Memory Size: 128 MB	Max Memory Used: 80 MB
+REPORT RequestId: 72cd4f33-b255-4755-9bf3-79694790a234	Duration: 0.49 ms	Billed Duration: 100 ms 	Memory Size: 128 MB	Max Memory Used: 88 MB	
+
 *** TODO Fibonacci
 *** TODO Cloudwatch to Slack
+
 ** ScalaJS
-*** TODO Hello
+*** DONE Hello
+zip: 6.4KB
+REPORT RequestId: d57d015e-386c-4eb8-a9a7-02445a22a450	Duration: 11.61 ms	Billed Duration: 100 ms 	Memory Size: 128 MB	Max Memory Used: 56 MB
+
 *** TODO Fibonacci
 *** TODO Cloudwatch to Slack
+
 ** Scala Native
-*** TODO Hello
+*** DONE Hello
+zip: 1.3MB
+REPORT RequestId: 5c15463c-7ce9-40f3-bf7b-e4fe13852351	Init Duration: 58.67 ms	Duration: 27.87 ms	Billed Duration: 100 ms 	Memory Size: 128 MB	Max Memory Used: 47 MB
+REPORT RequestId: 487c1c15-67f6-490b-905f-c5909911b438	Duration: 6.47 ms	Billed Duration: 100 ms 	Memory Size: 128 MB	Max Memory Used: 48 MB	
+
 *** TODO Fibonacci
 *** TODO Cloudwatch to Slack
+
 ** GraalVM
-*** TODO Hello
+*** DONE Hello
+zip:7.3MB
+REPORT RequestId: 0f68fed0-3ff6-4d71-9c27-11e32812fa7c	Init Duration: 98.92 ms	Duration: 316.81 ms	Billed Duration: 500 ms 	Memory Size: 128 MB	Max Memory Used: 46 MB	
+REPORT RequestId: b13ebc25-67e3-41af-9a1a-537f5cee3704	Duration: 12.13 ms	Billed Duration: 100 ms 	Memory Size: 128 MB	Max Memory Used: 48 MB
+
 *** TODO Fibonacci
 *** TODO Cloudwatch to Slack

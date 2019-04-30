@@ -8,7 +8,7 @@ object Hello {
   @JSExportTopLevel("sayHello")
   def sayHello(request: Request, context: js.Object, callback: Callback): Unit = {
     val message = s"Hello, ${request.name}. You're ${request.age} years old!"
-    val response = Response(message, 42)
+    val response = Response(message)
     callback(null, response.toJsObj)
   }
 }
@@ -22,9 +22,8 @@ trait Request extends js.Any {
 
 // Out
 @JSExportAll
-case class Response(message: String, secretNumber: Int) {
+case class Response(message: String) {
   def toJsObj: js.Object = js.Dynamic.literal(
-    "message" -> message,
-    "secretNumber" -> secretNumber
+    "message" -> message
   )
 }

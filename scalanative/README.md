@@ -3,18 +3,18 @@
 // TODO check required
 
 ```sh 
-docker cp ./* <container ID>:/build/main/
-docker run -it <container name> bash
+docker cp build.sbt <container ID>:/build/main/
+docker cp project/ <container ID>:/build/main/
+docker cp hello/ native-builder:/build/main/
+docker run -it <container name> sbt 'project hello' nativeLink
 
-# in docker container
-sbt 'project hello' nativeLink
+docker cp <container ID>:/build/main/target/<artifact> ./hello/bootstrap
+zip function.zip bootstrap
 
-# after exit from container
-docker cp <container ID>:/build/main/target/<artifact> ./hello/
-zip function.zip bootstrap <artifact>
-
+# runtime layer
 docker cp <container ID>:/build/runtime/ ./runtime/
-zip -r runtime.zip ./runtime/*
+cd runtime
+zip -r runtime.zip .
 ```
 
 

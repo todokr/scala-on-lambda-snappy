@@ -1,19 +1,12 @@
-import scala.beans.BeanProperty
+import com.amazonaws.services.lambda.runtime.Context
+import collection.JavaConverters._
 
-import com.amazonaws.services.lambda.runtime.{Context, RequestHandler}
+class Hello {
 
-class Hello extends RequestHandler[Request, Response] {
-
-  override def handleRequest(request: Request, context: Context): Response = {
-    val message = s"Hello, ${request.name}. You're ${request.age} years old!"
-    Response(message)
+  def handleRequest(rawRequest: java.util.Map[String, String], context: Context): java.util.Map[String, String] = {
+    val map = rawRequest.asScala
+    val name = map("name")
+    val age = map("age")
+    Map("message" -> s"Hello, $name. You're $age years old!").asJava
   }
-}
-
-case class Request(@BeanProperty var name: String, @BeanProperty var age: Int) {
-  def this() = this("", 0)
-
-}
-case class Response(@BeanProperty var message: String) {
-  def this() = this("")
 }
