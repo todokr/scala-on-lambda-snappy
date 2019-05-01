@@ -58,7 +58,7 @@ zip:7.3MB
 REPORT RequestId: 0f68fed0-3ff6-4d71-9c27-11e32812fa7c	Init Duration: 98.92 ms	Duration: 316.81 ms	Billed Duration: 500 ms 	Memory Size: 128 MB	Max Memory Used: 46 MB	
 REPORT RequestId: b13ebc25-67e3-41af-9a1a-537f5cee3704	Duration: 12.13 ms	Billed Duration: 100 ms 	Memory Size: 128 MB	Max Memory Used: 48 MB
 
-*** TODO Takeuchi (7.1MB)
+*** DONE Takeuchi (7.1MB)
 **** 5
 1: REPORT RequestId: d2c28d1c-ef8f-4e76-a248-f96e951354c3	Init Duration: 84.82 ms	Duration: 266.21 ms	Billed Duration: 400 ms 	Memory Size: 128 MB	Max Memory Used: 43 MB	
 2: REPORT RequestId: f6a52018-86f5-4f29-8d47-ee2b1c175b3a	Duration: 46.61 ms	Billed Duration: 100 ms 	Memory Size: 128 MB	Max Memory Used: 43 MB
