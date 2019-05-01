@@ -10,7 +10,8 @@ RUN curl -O http://downloads.typesafe.com/scala/${SCALA_VERSION}/scala-${SCALA_V
 RUN tar -xzvf scala-${SCALA_VERSION}.tgz && \
     rm -rf scala-${SCALA_VERSION}.tgz && \
     echo "export SCALA_HOME=/home/ec2-user/scala-${SCALA_VERSION}" >> ~/.bashrc && \
-    echo "export PATH=$PATH:/home/ec2-user/scala-${SCALA_VERSION}/bin" >> ~/.bashrc
+    echo "export PATH=$PATH:/home/ec2-user/scala-${SCALA_VERSION}/bin:/opt/llvm-3.9.0/bin" >> ~/.bashrc && \
+    source ~/.bashrc
 
 #SBT
 RUN curl https://bintray.com/sbt/rpm/rpm | tee /etc/yum.repos.d/bintray-sbt-rpm.repo
@@ -76,8 +77,6 @@ RUN mkdir -p /build/main
 
 WORKDIR /build/main
 ENV LD_LIBRARY_PATH=/opt/lib/ssl/lib:/usr/local/lib:$LD_LIBRARY_PATH 
-ENV PATH=/opt/llvm-3.9.0/bin:${PATH}
-RUN source ~/.bashrc
 
 ADD build.sbt /build/main/
 ADD project/ /build/main/

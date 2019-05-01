@@ -5,8 +5,8 @@ object Hello {
 
   type Callback = js.Function2[Error, js.Any, Unit]
 
-  @JSExportTopLevel("sayHello")
-  def sayHello(request: Request, context: js.Object, callback: Callback): Unit = {
+  @JSExportTopLevel("handleRequest")
+  def handleRequest(request: Request, context: js.Object, callback: Callback): Unit = {
     val message = s"Hello, ${request.name}. You're ${request.age} years old!"
     val response = Response(message)
     callback(null, response.toJsObj)

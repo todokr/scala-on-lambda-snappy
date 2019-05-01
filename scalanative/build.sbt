@@ -2,7 +2,8 @@ lazy val commonSettings = Seq(
   scalaVersion := "2.11.12",
   resolvers += "mmreleases" at "https://artifactory.mediamath.com/artifactory/libs-release-global",
   nativeLinkingOptions ++= Seq("-static-libstdc++", "-L/lib/"),
-  nativeGC := "immix" // default setting requires addtional libs such as Boehm GC
+  nativeGC := "immix", // default setting requires addtional libs such as Boehm GC
+  nativeMode := "release"
 )
 
 lazy val hello = (project in file("hello"))
@@ -14,7 +15,7 @@ lazy val hello = (project in file("hello"))
     )
   ).enablePlugins(ScalaNativePlugin)
 
-lazy val fibonacci = (project in file("fibonacci"))
+lazy val takeuchi = (project in file("takeuchi"))
   .settings(
     commonSettings,
     libraryDependencies ++= Seq(

@@ -11,7 +11,7 @@ lazy val hello = (project in file("hello"))
     )
   )
 
-lazy val fibonacci = (project in file("fibonacci"))
+lazy val takeuchi = (project in file("takeuchi"))
   .settings(
     commonSettings,
     libraryDependencies ++= Seq(

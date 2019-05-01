@@ -11,8 +11,8 @@ lazy val hello = (project in file("hello"))
   ).enablePlugins(ScalaJSPlugin)
 
 
-lazy val fibonacci = (project in file("fibonacci"))
+lazy val takeuchi = (project in file("takeuchi"))
   .settings(
     commonSettings,
-    artifactPath in (Compile, fastOptJS) := baseDirectory.value / "dist" / "fibonacci.js",
+    artifactPath in (Compile, fastOptJS) := baseDirectory.value / "dist" / "takeuchi.js",
   ).enablePlugins(ScalaJSPlugin)
