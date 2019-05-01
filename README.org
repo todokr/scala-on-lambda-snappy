@@ -38,17 +38,24 @@ REPORT RequestId: 72cd4f33-b255-4755-9bf3-79694790a234	Duration: 0.49 ms	Billed 
 
 ** Scala Native
 *** DONE Hello (zip: 1.3MB)
-1: REPORT RequestId: cf6caad8-7cf6-4d78-9266-b2102418154d	Init Duration: 55.38 ms	Duration: 27.30 ms	Billed Duration: 100 ms 	Memory Size: 128 MB	Max Memory Used: 40 MB
-2: REPORT RequestId: c3363afd-3e0a-45f6-aef0-d790139233d7	Duration: 22.45 ms	Billed Duration: 100 ms 	Memory Size: 128 MB	Max Memory Used: 40 MB
+1: REPORT RequestId: 712feffb-c322-409c-ac8a-96cd8a1aed48	Init Duration: 63.82 ms	Duration: 26.84 ms	Billed Duration: 100 ms 	Memory Size: 128 MB	Max Memory Used: 39 MB	
+2: REPORT RequestId: db10069d-0e6e-4eb4-8e08-4193000a814d	Duration: 7.05 ms	Billed Duration: 100 ms 	Memory Size: 128 MB	Max Memory Used: 39 MB	
+3: REPORT RequestId: 5f84acf7-112f-43bf-97d4-764f725c4cc4	Duration: 15.61 ms	Billed Duration: 100 ms 	Memory Size: 128 MB	Max Memory Used: 40 MB
+4: REPORT RequestId: 17d8e14f-04eb-46b7-87a0-5a459fb4c54f	Duration: 44.09 ms	Billed Duration: 100 ms 	Memory Size: 128 MB	Max Memory Used: 40 MB	
+5: REPORT RequestId: 67292178-afdf-45d6-a25a-3cbd34872748	Duration: 21.74 ms	Billed Duration: 100 ms 	Memory Size: 128 MB	Max Memory Used: 40 MB	
 
 *** DONE Takeuchi (zip: 1.3MB)
 **** 5
-1: REPORT RequestId: 6f0ada7d-2b1b-42ea-8d92-157cbfd08891	Init Duration: 58.82 ms	Duration: 32.44 ms	Billed Duration: 100 ms 	Memory Size: 128 MB	Max Memory Used: 40 MB	
-2: REPORT RequestId: b95cf2e2-8a95-4a94-b481-8953bae6e05c	Duration: 33.42 ms	Billed Duration: 100 ms 	Memory Size: 128 MB	Max Memory Used: 40 MB
+1: REPORT RequestId: afba945c-ef94-4e58-8428-2dab14709252	Init Duration: 60.87 ms	Duration: 30.05 ms	Billed Duration: 100 ms 	Memory Size: 128 MB	Max Memory Used: 39 MB	
+2: REPORT RequestId: 388fe5f5-92cd-4c52-a68a-41046472ff6e	Duration: 19.49 ms	Billed Duration: 100 ms 	Memory Size: 128 MB	Max Memory Used: 40 MB	
+3: REPORT RequestId: dceaa20e-49ec-48e8-a133-e715f06fbdb6	Duration: 16.97 ms	Billed Duration: 100 ms 	Memory Size: 128 MB	Max Memory Used: 40 MB	
+4: REPORT RequestId: b0d9dc07-f064-441e-bce4-3cac134065ee	Duration: 26.05 ms	Billed Duration: 100 ms 	Memory Size: 128 MB	Max Memory Used: 40 MB	
+5: REPORT RequestId: 00e451e3-d94b-4836-ab73-0fac7a1704b0	Duration: 28.69 ms	Billed Duration: 100 ms 	Memory Size: 128 MB	Max Memory Used: 41 MB	
 
 **** 7
-1: REPORT RequestId: 217f79dd-291e-41a1-b50a-b57d1949463c	Init Duration: 56.63 ms	Duration: 18830.51 ms	Billed Duration: 18900 ms 	Memory Size: 128 MB	Max Memory Used: 40 MB
-2: REPORT RequestId: bcb6c790-3b68-400c-a566-0cc642e5a6f7	Duration: 18804.84 ms	Billed Duration: 18900 ms 	Memory Size: 128 MB	Max Memory Used: 40 MB	
+1: REPORT RequestId: 399080a2-2b40-42a2-ba86-490ad6c70fc0	Init Duration: 56.48 ms	Duration: 19009.97 ms	Billed Duration: 19100 ms 	Memory Size: 128 MB	Max Memory Used: 40 MB	
+2: REPORT RequestId: 0192f669-1af2-4fcc-897a-ac65858e9e81	Duration: 18910.17 ms	Billed Duration: 19000 ms 	Memory Size: 128 MB	Max Memory Used: 40 MB	
+3: REPORT RequestId: a496b2d2-ff5c-4b33-8180-10940453691b	Duration: 18965.10 ms	Billed Duration: 19000 ms 	Memory Size: 128 MB	Max Memory Used: 40 MB	
 
 *** TODO Cloudwatch to Slack
 

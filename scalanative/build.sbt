@@ -3,7 +3,7 @@ lazy val commonSettings = Seq(
   resolvers += "mmreleases" at "https://artifactory.mediamath.com/artifactory/libs-release-global",
   nativeLinkingOptions ++= Seq("-static-libstdc++", "-L/lib/"),
   nativeGC := "immix", // default setting requires addtional libs such as Boehm GC
-  nativeMode := "release"
+  nativeCompileOptions := Seq("-O3")
 )
 
 lazy val hello = (project in file("hello"))
