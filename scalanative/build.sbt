@@ -24,4 +24,11 @@ lazy val takeuchi = (project in file("takeuchi"))
     )
   ).enablePlugins(ScalaNativePlugin)
 
-
+lazy val audit = (project in file("audit"))
+  .settings(
+    commonSettings,
+    libraryDependencies ++= Seq(
+      "com.softwaremill.sttp" %%% "core" % "1.5.11",
+      "io.argonaut" % "argonaut_native0.3_2.11" % "6.2.2"
+    )
+  ).enablePlugins(ScalaNativePlugin)

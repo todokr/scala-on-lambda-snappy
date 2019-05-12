@@ -16,3 +16,17 @@ lazy val takeuchi = (project in file("takeuchi"))
     commonSettings,
     artifactPath in (Compile, fastOptJS) := baseDirectory.value / "dist" / "takeuchi.js",
   ).enablePlugins(ScalaJSPlugin)
+
+lazy val crawler = (project in file("crawler"))
+.settings(
+  commonSettings,
+  libraryDependencies += "com.softwaremill.sttp" %%% "core" % "1.5.14",
+  artifactPath in (Compile, fastOptJS) := baseDirectory.value / "dist" / "crawler.js",
+).enablePlugins(ScalaJSPlugin)
+
+lazy val audit = (project in file("audit"))
+  .settings(
+    commonSettings,
+    libraryDependencies += "com.softwaremill.sttp" %%% "core" % "1.5.14",
+    artifactPath in (Compile, fastOptJS) := baseDirectory.value / "dist" / "audit.js",
+  ).enablePlugins(ScalaJSPlugin)

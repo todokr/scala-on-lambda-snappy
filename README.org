@@ -20,6 +20,11 @@ REPORT RequestId: 72cd4f33-b255-4755-9bf3-79694790a234	Duration: 0.49 ms	Billed 
 2: REPORT RequestId: fd24f8b7-bfcf-4bec-ba07-64a4e40d8c7c	Duration: 11938.42 ms	Billed Duration: 12000 ms 	Memory Size: 128 MB	Max Memory Used: 105 MB	
 *** TODO Cloudwatch to Slack
 
+*** DONE Kuromoji(jar: 18.7MB)
+1: REPORT RequestId: 26ddff74-5175-4826-8a14-a68364d8cd82	Duration: 9541.53 ms	Billed Duration: 9600 ms 	Memory Size: 128 MB	Max Memory Used: 128 MB	
+2: REPORT RequestId: 70df3330-0579-4e9d-9e91-348484cc563b	Duration: 94.81 ms	Billed Duration: 100 ms 	Memory Size: 128 MB	Max Memory Used: 128 MB	
+3: REPORT RequestId: cdbe3ff5-1ed6-4d0c-a6a1-ef67cb5557c5	Duration: 1.56 ms	Billed Duration: 100 ms 	Memory Size: 128 MB	Max Memory Used: 128 MB	
+
 ** ScalaJS
 *** DONE Hello (zip: 6.4KB)
 1: REPORT RequestId: d57d015e-386c-4eb8-a9a7-02445a22a450	Duration: 11.61 ms	Billed Duration: 100 ms 	Memory Size: 128 MB	Max Memory Used: 56 MB
@@ -75,3 +80,8 @@ REPORT RequestId: b13ebc25-67e3-41af-9a1a-537f5cee3704	Duration: 12.13 ms	Billed
 2: REPORT RequestId: 8f5acab2-573e-4d50-b909-f178fb331d72	Duration: 17458.24 ms	Billed Duration: 17500 ms 	Memory Size: 128 MB	Max Memory Used: 28 MB	
 
 *** TODO Cloudwatch to Slack
+
+*** DONE Kuromoji(20.6MB)
+1: REPORT RequestId: d786ef04-9ca3-4b5a-95df-9cffad0548d4	Init Duration: 129.40 ms	Duration: 44.37 ms	Billed Duration: 200 ms 	Memory Size: 128 MB	Max Memory Used: 75 MB	
+2: REPORT RequestId: 66ba9111-22e0-4707-abde-13b558763699	Duration: 35.70 ms	Billed Duration: 100 ms 	Memory Size: 128 MB	Max Memory Used: 76 MB
+

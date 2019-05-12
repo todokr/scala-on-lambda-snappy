@@ -3,7 +3,6 @@ import com.amazonaws.services.lambda.runtime.Context
 
 class Takeuchi {
 
-
   def handleRequest(n: Int, context: Context): java.util.Map[String, String] = {
     val result = takeuchi(n * 2, n, 0) // O(n^n)
     Map("message" -> s"Yay! Result is $result!").asJava

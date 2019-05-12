@@ -30,5 +30,21 @@ lazy val takeuchi = (project in file("takeuchi"))
   )
 )
 
+lazy val cloudwatchSlack = (project in file("cloudwatchSlack"))
+.settings(
+  libraryDependencies ++= Seq(
+    "com.amazonaws" % "aws-lambda-java-core" % "1.2.0",
+    "com.amazonaws" % "aws-lambda-java-events" % "2.2.6",
+    "com.amazonaws" % "aws-java-sdk-s3" % "1.11.163",
+    "com.softwaremill.sttp" %% "core" % "1.5.16"
+  )
+)
 
+lazy val kuromoji = (project in file("kuromoji"))
+.settings(
+  libraryDependencies ++= Seq(
+    "com.amazonaws" % "aws-lambda-java-core" % "1.2.0",
+    "com.atilika.kuromoji" % "kuromoji-ipadic" % "0.9.0"
+  )
+)
 

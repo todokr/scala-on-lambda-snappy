@@ -19,3 +19,21 @@ lazy val takeuchi = (project in file("takeuchi"))
       "io.argonaut" %% "argonaut" % "6.2.2"
     )
   )
+
+lazy val audit = (project in file("audit"))
+  .settings(
+    commonSettings,
+    libraryDependencies ++= Seq(
+      "com.softwaremill.sttp" %% "core" % "1.5.11",
+      "io.argonaut" %% "argonaut" % "6.2.2"
+    )
+  )
+
+lazy val kuromoji = (project in file("kuromoji"))
+  .settings(
+    libraryDependencies ++= Seq(
+      "com.softwaremill.sttp" %% "core" % "1.5.11",
+      "io.argonaut" %% "argonaut" % "6.2.2",
+      "com.atilika.kuromoji" % "kuromoji-ipadic" % "0.9.0"
+    )
+  )
