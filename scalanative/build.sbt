@@ -24,7 +24,7 @@ lazy val takeuchi = (project in file("takeuchi"))
     )
   ).enablePlugins(ScalaNativePlugin)
 
-lazy val audit = (project in file("audit"))
+lazy val cloudwatchSlack = (project in file("cloudwatchSlack"))
   .settings(
     commonSettings,
     libraryDependencies ++= Seq(

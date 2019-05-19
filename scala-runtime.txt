@@ -1,0 +1,14 @@
+$ tree ./scala
+scala/
+├── AnyVal.class
+├── AnyValCompanion.class
+├── App.class
+├── Array$$anon$2.class
+├── Array$.class
+...
+│       ├── Regex$Replacement.class
+│       ├── Regex.class
+│       └── UnanchoredRegex.class
+└── volatile.class
+
+34 directories, 2503 files

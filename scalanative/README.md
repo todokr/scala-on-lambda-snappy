@@ -3,12 +3,10 @@
 // TODO check required
 
 ```sh 
-docker cp build.sbt <container ID>:/build/main/
-docker cp project/ <container ID>:/build/main/
-docker cp hello/ native-builder:/build/main/
-docker run -it <container name> sbt 'project hello' nativeLink
-
-docker cp <container ID>:/build/main/target/<artifact> ./hello/bootstrap
+scala-on-lambda-snappy/scalanative $ docker cp ./ native-builder:/build/main/
+scala-on-lambda-snappy/scalanative $ docker exec -it native-builder sbt 'project <project-name>' nativeLink
+scala-on-lambda-snappy/scalanative $ docker cp native-builder:/build/main/<project-name>/target/scala-2.11/<lower-project-name>-out <projectName>/bootstrap
+cd <projectName>
 zip function.zip bootstrap
 
 # runtime layer

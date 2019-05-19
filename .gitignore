@@ -1,4 +1,18 @@
+*.class
+*.log
 .idea
-target
-
 scalanative/runtime/*
+
+# sbt specific
+.cache
+.history
+.lib/
+dist/*
+target/
+lib_managed/
+src_managed/
+project/boot/
+project/plugins/project/
+
+# Serverless directories
+.serverless
